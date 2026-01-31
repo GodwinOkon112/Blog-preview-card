@@ -1,0 +1,112 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --paragraph-font: 1rem;
+  --margin: 1rem;
+}
+
+@font-face {
+  font-family: "figtree";
+  src: url("/assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: figtree;
+  font-size: var(--paragraph-font);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--yellow);
+}
+
+.blog-container {
+  position: relative;
+  background-color: var(--white);
+  border: 0.1rem solid var(--gray-950);
+  border-radius: 1rem;
+  padding: 1.3rem;
+  z-index: 30;
+  /* display: none; */
+}
+
+.relative {
+  position: relative;
+}
+
+.dummy {
+  position: absolute;
+  top: 0;
+  width: 370px;
+  height: 512px;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  background-color: black;
+}
+
+.image-container img {
+  border-radius: 0.7rem;
+}
+
+.text-container p {
+  color: var(--gray-950);
+  font-weight: 500;
+  margin-block: var(--margin);
+}
+
+.text-container button  {
+  color: var(--gray-950);
+  font-weight: 900;
+  cursor: none;
+  background-color: var(--yellow);
+  outline: none;
+  border: none;
+  margin-top: var(--margin);
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.text-container h1 {
+  color: var(--gray-950);
+  font-size: 1.6rem;
+  font-weight: bolder;
+  margin-block: var(--margin);
+}
+.text-container h2:hover {
+  color: var(--yellow);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.text-container .description {
+  color: var(--gray-500);
+  margin-block: var(--margin);
+  font-weight: 500;
+}
+
+.image-and-text {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.profile-image img {
+  width: 2rem;
+}
+
+.image-and-text p {
+  color: var(--gray-950);
+  font-weight: 800;
+  margin-left: 0.7rem;
+  font-size: 0.8rem;
+}
